@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="30" parallel="tests" name="Failed suite [AspectLoggingSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="30" parallel="tests" name="All Assigned Candidate Page Test Case-1(failed)">
+    <classes>
+      <class name="org.example.SeleniumAspectSupportTest">
+        <methods>
+          <include name="initDriver"/>
+          <include name="simpleTest"/>
+          <include name="dropDriver"/>
+        </methods>
+      </class> <!-- org.example.SeleniumAspectSupportTest -->
+    </classes>
+  </test> <!-- All Assigned Candidate Page Test Case-1(failed) -->
+</suite> <!-- Failed suite [AspectLoggingSuite] -->
