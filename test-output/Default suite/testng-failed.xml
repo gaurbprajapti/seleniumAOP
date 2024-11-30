@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.example.SeleniumAspectSupportTest">
+      <class name="org.test.CandidateTest">
         <methods>
           <include name="initDriver"/>
-          <include name="simpleTest"/>
-          <include name="dropDriver"/>
           <include name="dataProviderTestCase" invocation-numbers="0"/>
+          <include name="dropDriver"/>
+          <include name="simpleTest2"/>
         </methods>
-      </class> <!-- org.example.SeleniumAspectSupportTest -->
+      </class> <!-- org.test.CandidateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

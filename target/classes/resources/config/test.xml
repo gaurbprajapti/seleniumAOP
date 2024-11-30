@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="AspectLoggingSuite" thread-count="30" parallel="tests">
+<suite name="AspectLoggingSuite" thread-count="1" parallel="tests">
 
 
   <!-- <test name="SeleniumTests">
@@ -10,17 +10,9 @@
             <class name="org.example.SeleniumAspectSupportTest"/>
         </classes>
     </test>
-     --> 
-    	<test name="All Assigned Candidate Page Test Case-1">
-		<classes>
-			<class name="org.example.SeleniumAspectSupportTest">
-				<methods>
-					<include name="simpleTest" />
-				</methods>
-			</class>
-		</classes>
-	</test>
-        	<test name="All Assigned Candidate Page Test Case-3">
+    
+    
+    	<test name="All Assigned Candidate Page Test Case-3">
 		<classes>
 			<class name="org.example.SeleniumAspectSupportTest">
 				<methods>
@@ -40,7 +32,30 @@
 		</classes>
 	</test>
 	
-
+	<test name="All Assigned Candidate Page Test Case-1">
+		<classes>
+			<class name="org.example.SeleniumAspectSupportTest">
+				<methods>
+					<include name="simpleTest" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+     --> 
+    	
+        
+	
+    	<test name="All Assigned Candidate Page Test Case-6">
+		<classes>
+			<class name="org.test.CandidateTest">
+				<methods>
+					<include name="simpleTest2" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+        
 	
 	
 </suite>

@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>TestNG:  All Assigned Candidate Page Test Case-5</title>
+<title>TestNG:  All Assigned Candidate Page Test Case-6</title>
 <link href="../testng.css" rel="stylesheet" type="text/css" />
 <link href="../my-testng.css" rel="stylesheet" type="text/css" />
 
@@ -53,13 +53,13 @@ function toggleAllBoxes() {
 
 </head>
 <body>
-<h2 align='center'>All Assigned Candidate Page Test Case-5</h2><table border='1' align="center">
+<h2 align='center'>All Assigned Candidate Page Test Case-6</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Nov 30 18:40:57 IST 2024</td>
+<td>Started on:</td><td>Sat Nov 30 21:01:10 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>3 seconds (3726 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3717 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,18 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.example.SeleniumAspectSupportTest.dataProviderTestCase()'><b>dataProviderTestCase</b><br>Test class: org.example.SeleniumAspectSupportTest<br>Parameters: testDataA</td>
-<td><div><pre>java.lang.AssertionError: Data is invalid. 
-	at org.example.SeleniumAspectSupportTest.dataProviderTestCase(SeleniumAspectSupportTest.java:43)
+<td title='org.test.CandidateTest.simpleTest2()'><b>simpleTest2</b><br>Test class: org.test.CandidateTest</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.loginInput&quot; is null
+	at org.test.CommonFunction.addContactFormAPI(CommonFunction.java:16)
+	at org.test.CandidateTest.simpleTest2(CandidateTest.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1768479939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1768479939'><pre>java.lang.AssertionError: Data is invalid. 
-	at org.testng.Assert.fail(Assert.java:110)
-	at org.example.SeleniumAspectSupportTest.dataProviderTestCase(SeleniumAspectSupportTest.java:43)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1983654168", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1983654168'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.click()&quot; because &quot;this.loginInput&quot; is null
+	at org.test.CommonFunction.addContactFormAPI(CommonFunction.java:16)
+	at org.test.CandidateTest.simpleTest2(CandidateTest.java:31)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -109,22 +110,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>0</td>
-<td>org.example.SeleniumAspectSupportTest@7c37508a</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='org.example.SeleniumAspectSupportTest.dataProviderTestCase()'><b>dataProviderTestCase</b><br>Test class: org.example.SeleniumAspectSupportTest<br>Parameters: testDataB</td>
-<td></td>
-<td>0</td>
-<td>org.example.SeleniumAspectSupportTest@7c37508a</td></tr>
+<td>1</td>
+<td>org.test.CandidateTest@712625fd</td></tr>
 </table><p>
 </body>
 </html>

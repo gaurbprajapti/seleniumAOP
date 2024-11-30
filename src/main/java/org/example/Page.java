@@ -29,6 +29,10 @@ public class Page {
   public void clickOnloginBtn() {
     loginBtn.click();
   }
+  
+  public void clickOnSignUpBtn() {
+	    loginBtn.click();
+	  }
 
   public void clickOnloginInput() {
     loginInput.click();

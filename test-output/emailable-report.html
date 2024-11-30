@@ -9,13 +9,13 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">3,228</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">4,076</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">org.example.SeleniumAspectSupportTest</td><td><a href="#m0">dataProviderTestCase</a></td><td rowspan="1">1731358248693</td><td rowspan="1">92</td></tr><tr class="failedeven"><td><a href="#m1">simpleTest</a></td><td rowspan="1">1731358248788</td><td rowspan="1">926</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">org.example.SeleniumAspectSupportTest</td><td><a href="#m2">dataProviderTestCase</a></td><td rowspan="1">1731358248787</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m3">testcheck</a></td><td rowspan="1">1731358249716</td><td rowspan="1">595</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">org.test.CandidateTest</td><td><a href="#m0">dataProviderTestCase</a></td><td rowspan="1">1732980707174</td><td rowspan="1">89</td></tr><tr class="failedeven"><td><a href="#m1">simpleTest2</a></td><td rowspan="1">1732980707266</td><td rowspan="1">1055</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">org.test.CandidateTest</td><td><a href="#m2">dataProviderTestCase</a></td><td rowspan="1">1732980707264</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">testcheck</a></td><td rowspan="1">1732980708325</td><td rowspan="1">1104</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">org.example.SeleniumAspectSupportTest#dataProviderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testDataA</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Data is invalid. 
+<h2>Default test</h2><h3 id="m0">org.test.CandidateTest#dataProviderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testDataA</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Data is invalid. 
 	at org.testng.Assert.fail(Assert.java:110)
-	at org.example.SeleniumAspectSupportTest.dataProviderTestCase(SeleniumAspectSupportTest.java:43)
+	at org.test.CandidateTest.dataProviderTestCase(CandidateTest.java:50)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -43,15 +43,15 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.example.SeleniumAspectSupportTest#simpleTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.test&quot;}
-  (Session info: chrome=130.0.6723.117)
+<h3 id="m1">org.test.CandidateTest#simpleTest2</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.test&quot;}
+  (Session info: chrome=131.0.6778.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a67a94b08992783a0d65892a09259f3b, findElement {using=class name, value=test}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: /var/folders/05/t8kgs4bx0dq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50175/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a67a94b08992783a0d65892a09259f3b
+Command: [bf288d3167332c6156686d8774f08a4c, findElement {value=test, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/05/t8kgs4bx0dq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51409}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51409/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf288d3167332c6156686d8774f08a4c
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -69,8 +69,8 @@ Session ID: a67a94b08992783a0d65892a09259f3b
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at org.example.Page.clickOnloginBtn(Page.java:30)
-	at org.example.SeleniumAspectSupportTest.simpleTest(SeleniumAspectSupportTest.java:27)
+	at org.example.Page.clickOnSignUpBtn(Page.java:34)
+	at org.test.CandidateTest.simpleTest2(CandidateTest.java:30)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -98,7 +98,7 @@ Session ID: a67a94b08992783a0d65892a09259f3b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">org.example.SeleniumAspectSupportTest#dataProviderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testDataB</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">org.example.SeleniumAspectSupportTest#testcheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.test.CandidateTest#dataProviderTestCase</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>testDataB</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.test.CandidateTest#testcheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

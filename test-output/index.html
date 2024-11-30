@@ -103,12 +103,12 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.example.SeleniumAspectSupportTest" class="method navigator-link" hash-for-method="dataProviderTestCase(testDataA)">dataProviderTestCase(testDataA)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.test.CandidateTest" class="method navigator-link" hash-for-method="dataProviderTestCase(testDataA)">dataProviderTestCase(testDataA)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.example.SeleniumAspectSupportTest" class="method navigator-link" hash-for-method="simpleTest">simpleTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.test.CandidateTest" class="method navigator-link" hash-for-method="simpleTest2">simpleTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,12 +122,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.example.SeleniumAspectSupportTest" class="method navigator-link" hash-for-method="dataProviderTestCase(testDataB)">dataProviderTestCase(testDataB)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.test.CandidateTest" class="method navigator-link" hash-for-method="dataProviderTestCase(testDataB)">dataProviderTestCase(testDataB)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="org.example.SeleniumAspectSupportTest" class="method navigator-link" hash-for-method="testcheck">testcheck</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="org.test.CandidateTest" class="method navigator-link" hash-for-method="testcheck">testcheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -145,7 +145,7 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">org.example.SeleniumAspectSupportTest</span>
+              <span class="class-name">org.test.CandidateTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -156,7 +156,7 @@
                   <span class="parameters">(testDataA)</span>
                   <div class="stack-trace">java.lang.AssertionError: Data is invalid. 
 	at org.testng.Assert.fail(Assert.java:110)
-	at org.example.SeleniumAspectSupportTest.dataProviderTestCase(SeleniumAspectSupportTest.java:43)
+	at org.test.CandidateTest.dataProviderTestCase(CandidateTest.java:50)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -189,18 +189,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="simpleTest">
-                  </a> <!-- simpleTest -->
-                  <span class="method-name">simpleTest</span>
+                  <a name="simpleTest2">
+                  </a> <!-- simpleTest2 -->
+                  <span class="method-name">simpleTest2</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.test&quot;}
-  (Session info: chrome=130.0.6723.117)
+  (Session info: chrome=131.0.6778.86)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.6.1&apos;, java.version: &apos;21.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a67a94b08992783a0d65892a09259f3b, findElement {using=class name, value=test}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: /var/folders/05/t8kgs4bx0dq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50175}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50175/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: a67a94b08992783a0d65892a09259f3b
+Command: [bf288d3167332c6156686d8774f08a4c, findElement {value=test, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: /var/folders/05/t8kgs4bx0dq...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51409}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:51409/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bf288d3167332c6156686d8774f08a4c
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -218,8 +218,8 @@ Session ID: a67a94b08992783a0d65892a09259f3b
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy13.click(Unknown Source)
-	at org.example.Page.clickOnloginBtn(Page.java:30)
-	at org.example.SeleniumAspectSupportTest.simpleTest(SeleniumAspectSupportTest.java:27)
+	at org.example.Page.clickOnSignUpBtn(Page.java:34)
+	at org.test.CandidateTest.simpleTest2(CandidateTest.java:30)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -255,7 +255,7 @@ Session ID: a67a94b08992783a0d65892a09259f3b
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">org.example.SeleniumAspectSupportTest</span>
+              <span class="class-name">org.test.CandidateTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -278,7 +278,7 @@ Session ID: a67a94b08992783a0d65892a09259f3b
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/05/t8kgs4bx0dq3hhdtq7rrmdv00000gn/T/testng-eclipse-1528773575/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/05/t8kgs4bx0dq3hhdtq7rrmdv00000gn/T/testng-eclipse-683323262/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -287,7 +287,7 @@ Session ID: a67a94b08992783a0d65892a09259f3b
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.example.SeleniumAspectSupportTest&quot;/&gt;
+      &lt;class name=&quot;org.test.CandidateTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -329,26 +329,26 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'simpleTest')
-data.setCell(0, 2, 'org.example.SeleniumAspectSupportTest')
-data.setCell(0, 3, 926);
+data.setCell(0, 1, 'testcheck')
+data.setCell(0, 2, 'org.test.CandidateTest')
+data.setCell(0, 3, 1104);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testcheck')
-data.setCell(1, 2, 'org.example.SeleniumAspectSupportTest')
-data.setCell(1, 3, 595);
+data.setCell(1, 1, 'simpleTest2')
+data.setCell(1, 2, 'org.test.CandidateTest')
+data.setCell(1, 3, 1055);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'dataProviderTestCase')
-data.setCell(2, 2, 'org.example.SeleniumAspectSupportTest')
-data.setCell(2, 3, 92);
+data.setCell(2, 2, 'org.test.CandidateTest')
+data.setCell(2, 3, 89);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'dataProviderTestCase')
-data.setCell(3, 2, 'org.example.SeleniumAspectSupportTest')
-data.setCell(3, 3, 0);
+data.setCell(3, 2, 'org.test.CandidateTest')
+data.setCell(3, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -374,7 +374,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.example.SeleniumAspectSupportTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">org.test.CandidateTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">initDriver</span>
                 <span class="method-start">0 ms</span>
@@ -383,25 +383,25 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">dataProviderTestCase(testDataA)</span>
-                <span class="method-start">1520 ms</span>
+                <span class="method-start">1669 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">dataProviderTestCase(testDataB)</span>
-                <span class="method-start">1614 ms</span>
+                <span class="method-start">1759 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">simpleTest</span>
-                <span class="method-start">1615 ms</span>
+                <span class="method-name">simpleTest2</span>
+                <span class="method-start">1761 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testcheck</span>
-                <span class="method-start">2543 ms</span>
+                <span class="method-start">2820 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">dropDriver</span>
-                <span class="method-start">3148 ms</span>
+                <span class="method-start">3936 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

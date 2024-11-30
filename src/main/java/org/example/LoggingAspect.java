@@ -10,6 +10,7 @@ import java.lang.reflect.Method;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.aspectj.lang.reflect.MethodSignature;
@@ -138,7 +139,8 @@ public class LoggingAspect {
     
     private static final ThreadLocal<Boolean> retryFlag = ThreadLocal.withInitial(() -> Boolean.FALSE);
 
-    @AfterThrowing(pointcut = "execution(* org.example.*.*(..))", throwing = "ex")
+    @AfterThrowing(pointcut = "execution(* org.example..*(..)) || execution(* org.test..*(..))", throwing = "ex")
+  //  @AfterThrowing(pointcut = "execution(* org.example.*.*(..))", throwing = "ex")
     public void logAfterThrowing(JoinPoint joinPoint, Throwable ex) {
         MethodSignature signature = (MethodSignature) joinPoint.getSignature();
         Method method = signature.getMethod();
@@ -243,8 +245,9 @@ public class LoggingAspect {
 //  }
     
     // This will run after each test case and ensure the logs are flushed
-//    @After("execution(* org.example.SeleniumAspectSupportTest.*(..)) && @annotation(org.testng.annotations.Test)")
-//    public void endTest() {
-//        extent.flush();
-//    }
+    @After("execution(* org.example.SeleniumAspectSupportTest.*(..)) && @annotation(org.testng.annotations.Test)")
+//    @AfterTest
+    public void endTest() {
+        extent.flush();
+    }
 }
